@@ -21,4 +21,12 @@ public class FileDTO {
 	private int imageNo;
 	private int articleNo;
 	private String fileName;
+	public void setFileName(String originalFileName) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setArticleNo(Object articleNo2) {
+		// TODO Auto-generated method stub
+		
+	}
 }

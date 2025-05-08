@@ -10,7 +10,7 @@ import com.example.demo.member.dto.MemberDTO;
 public interface MemberRepository extends JpaRepository<MemberDTO, String>{
 	@Modifying
 	@Query("update Member m set m.pwd=:pwd, m.name=:name, m.email=:email where m.id=:id")
-	int updateMember(@Param("id") String id, @Param("pwd") String pwd,
+	int updateMember(@Param("id") String id, @Param("pwd") CharSequence charSequence,
 			 @Param("name") String name, @Param("email") String email);
 
 	@Modifying

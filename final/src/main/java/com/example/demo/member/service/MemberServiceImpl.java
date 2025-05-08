@@ -61,7 +61,7 @@ public class MemberServiceImpl implements MemberService{
 		
 		if(memberOpt.isPresent()) {
 			MemberDTO member = memberOpt.get();
-			String savePwd = member.getPwd();
+			String savePwd = (String) member.getPwd();
 			if(passwordEncoder.matches(pwd, savePwd)) {
 				// 로그인 성공
 				return true;

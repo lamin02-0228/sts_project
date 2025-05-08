@@ -23,4 +23,24 @@ public class MemberDTO {
 	private String email;
 	@Column(insertable=false, updatable=false, columnDefinition = "timestamp default current_timestamp")
 	private Date joinDate;
+	public void setPwd(String encodedPwd) {
+		// TODO Auto-generated method stub
+		
+	}
+	public CharSequence getPwd() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public String getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public String getEmail() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

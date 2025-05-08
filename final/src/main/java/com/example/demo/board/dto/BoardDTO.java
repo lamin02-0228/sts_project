@@ -32,6 +32,18 @@ public class BoardDTO {
 	private String id;
 	@Column(insertable=false, columnDefinition="int default 0")
 	private int cnt;
+	public int getCnt() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public void setCnt(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+	public Object getArticleNo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 
 
